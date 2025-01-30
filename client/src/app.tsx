@@ -1,7 +1,15 @@
 import "normalize.css";
+import MainLayout from "./components/Layout";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
-  return <h1>Hi dev!</h1>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <MainLayout />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

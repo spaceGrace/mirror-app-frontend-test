@@ -1,0 +1,24 @@
+.masonry {
+    display: flex;
+    flex-direction: row;
+    place-content: stretch center;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 6px;
+}
+
+.masonry_item {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch flex-start;
+    flex: 1 1 0%;
+    width: 0px;
+    gap: 6px;
+}
+
+.masonry_pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
